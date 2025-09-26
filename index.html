@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <meta
       name="google-site-verification"
       content="m_gTdDMrO9ubkJXM-kQ0AN4YaqhUVEk72-kzgYlKNkI"
@@ -49,6 +52,18 @@
   </head>
 
   <body>
+    <!-- 3D Preloader -->
+    <div class="preloader">
+      <div class="preloader-content">
+        <img
+          src="images/logo.png"
+          alt="Kwanza Images Logo"
+          class="logo-img-preloader"
+        />
+        <p>Loading Creativity...</p>
+      </div>
+    </div>
+
     <!-- Advanced Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
@@ -56,7 +71,7 @@
         <a class="navbar-brand" href="#home">
           <div class="logo-container">
             <img
-              src="images/logo.jpg"
+              src="images/logo.png"
               alt="Kwanza Images Logo"
               class="logo-img"
             />
@@ -72,6 +87,9 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="hamburger">
             <span></span>
@@ -490,7 +508,7 @@
             <div class="footer-brand">
               <div class="logo-container">
                 <img
-                  src="images/logo.jpg"
+                  src="images/logo.png"
                   alt="Kwanza Images Logo"
                   class="logo-img"
                 />

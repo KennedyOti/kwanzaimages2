@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (document.getElementById("particles-js")) {
     particlesJS("particles-js", {
       particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
+        number: { value: 60, density: { enable: true, value_area: 800 } },
         color: { value: "#ffffff" },
         shape: { type: "circle" },
         opacity: { value: 0.5, random: true },
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(statsSection);
   }
 
-  // Gallery Images (Using Unsplash as placeholders)
+  // Gallery Images
   const galleryImages = [
     "images/p17.jpg",
     "images/s1-min.jpg",
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     modal.innerHTML = `
             <img src="${imgSrc}" style="max-width: 90%; max-height: 90%; border-radius: 10px;">
-            <button class="modal-close" style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: white; font-size: 2rem; cursor: pointer;">×</button>
+            <button class="modal-close" style="position: absolute; top: 20px; right: 20px; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">×</button>
         `;
 
     document.body.appendChild(modal);
