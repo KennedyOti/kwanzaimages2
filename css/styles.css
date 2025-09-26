@@ -108,24 +108,17 @@ body {
 }
 
 /* Hamburger Menu */
-.navbar-toggler {
-  border: none;
-  padding: 0.25rem 0.5rem;
-  z-index: 1000;
-  position: relative;
-}
-
 .hamburger {
   display: flex;
   flex-direction: column;
-  width: 25px;
-  height: 18px;
+  width: 30px;
+  height: 21px;
   cursor: pointer;
 }
 
 .hamburger span {
   background: white;
-  height: 2px;
+  height: 3px;
   margin: 3px 0;
   transition: var(--transition);
   transform-origin: left;
