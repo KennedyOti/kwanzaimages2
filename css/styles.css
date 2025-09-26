@@ -42,59 +42,18 @@ body {
   color: white;
 }
 
-/* 3D Cube Animation */
-.logo-3d {
-  perspective: 1000px;
-  margin: 0 auto 30px;
-}
-
-.cube {
-  width: 100px;
+.logo-img-preloader {
   height: 100px;
-  position: relative;
-  transform-style: preserve-3d;
+  width: auto;
   animation: rotate 3s infinite linear;
-}
-
-.face {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: var(--gradient);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.front {
-  transform: translateZ(50px);
-}
-.back {
-  transform: translateZ(-50px) rotateY(180deg);
-}
-.right {
-  transform: translateX(50px) rotateY(90deg);
-}
-.left {
-  transform: translateX(-50px) rotateY(-90deg);
-}
-.top {
-  transform: translateY(-50px) rotateX(90deg);
-}
-.bottom {
-  transform: translateY(50px) rotateX(-90deg);
 }
 
 @keyframes rotate {
   0% {
-    transform: rotateX(0) rotateY(0);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotateX(360deg) rotateY(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -117,22 +76,9 @@ body {
   gap: 10px;
 }
 
-.logo-3d-small {
-  perspective: 500px;
-}
-
-.cube-small {
-  width: 40px;
+.logo-img {
   height: 40px;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: rotate-small 4s infinite linear;
-}
-
-.cube-small .face {
-  width: 40px;
-  height: 40px;
-  font-size: 1.2rem;
+  width: auto;
 }
 
 .brand-text {
@@ -227,7 +173,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("/images/photo2-min.jpg");
+  background: url("/images/photo3-min.jpg");
   opacity: 0.1;
 }
 
@@ -651,6 +597,76 @@ section {
     margin-left: 0;
     margin-top: 15px;
     display: block;
+  }
+
+  .logo-img {
+    height: 30px;
+  }
+
+  .brand-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .logo-img {
+    height: 25px;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  .logo-container {
+    gap: 5px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .gallery-item img {
+    height: 250px;
+  }
+
+  .team-image {
+    height: 250px;
+  }
+
+  .service-card {
+    padding: 30px 20px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
   }
 }
 
