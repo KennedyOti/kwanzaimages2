@@ -126,7 +126,7 @@
       </div>
     </nav>
 
-    <!-- Hero Section with 3D Parallax -->
+    <!-- Hero Section with Carousel -->
     <section id="home" class="hero-section">
       <div class="hero-background">
         <div class="parallax-bg" data-depth="0.4"></div>
@@ -157,12 +157,64 @@
             </div>
             <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
               <div class="hero-image">
-                <div class="floating-card">
-                  <img
-                    src="images/stud.webp"
-                    alt="Photography"
-                    class="img-fluid"
-                  />
+                <div
+                  id="heroCarousel"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-animation="fade-up">
+                      <div class="floating-card">
+                        <img
+                          src="images/stud.webp"
+                          alt="Photography 1"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-animation="zoom-in">
+                      <div class="floating-card">
+                        <img
+                          src="images/photo2-min.jpg"
+                          alt="Photography 2"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-animation="slide-right">
+                      <div class="floating-card">
+                        <img
+                          src="images/s1-min.jpg"
+                          alt="Photography 3"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
               </div>
             </div>

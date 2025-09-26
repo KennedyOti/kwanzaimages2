@@ -306,5 +306,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Carousel Animation Handler
+  const carousel = document.querySelector("#heroCarousel");
+  if (carousel) {
+    carousel.addEventListener("slide.bs.carousel", function (e) {
+      const nextItem = e.relatedTarget;
+      const animation = nextItem.getAttribute("data-animation");
+      nextItem.setAttribute("data-aos", animation);
+      AOS.refresh();
+    });
+  }
+
   console.log("Kwanza Images Studio - Premium Photography Website Loaded");
 });

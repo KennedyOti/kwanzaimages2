@@ -170,7 +170,7 @@ body {
 .hero-section {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--dark) 0%, #396af0 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, #16213e 100%);
   overflow: hidden;
 }
 
@@ -307,6 +307,53 @@ body {
     height: 0;
     opacity: 0;
   }
+}
+
+/* Carousel Styles */
+.carousel-item {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.carousel-item[data-animation="fade-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.carousel-item.active[data-animation="fade-up"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-item[data-animation="zoom-in"] {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.carousel-item.active[data-animation="zoom-in"] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel-item[data-animation="slide-right"] {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.carousel-item.active[data-animation="slide-right"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(2);
 }
 
 /* Sections */
@@ -500,7 +547,7 @@ section {
 
 .team-image-circle {
   width: 100%;
-  height: 100%;
+  height: 120%;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--gradient);
@@ -510,7 +557,7 @@ section {
 
 .team-image-circle img {
   width: 100%;
-  height: 130%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   transition: var(--transition);
